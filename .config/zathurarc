@@ -1,0 +1,32 @@
+set incremental-search true
+
+#set recolor "true"
+
+set default-bg "#1E1E1E"
+set default-fg "#FFFFFF"
+
+set completion-bg "#1E1E1E"
+set completion-fg "#FFFFFF"
+set completion-highlight-bg "#6587bf"
+set completion-highlight-fg "#1E1E1E"
+
+set statusbar-bg "#1E1E1E"
+set statusbar-fg "#FFFFFF"
+
+set inputbar-bg "#FFFFFF"
+set inputbar-fg "#1E1E1E"
+
+set recolor-darkcolor "#1E1E1E"
+set recolor-lightcolor "#FFFFFF"
+
+set window-height "800"
+set window-width "600"
+
+set adjust-open "width"
+set statusbar-home-tilde "true"
+set statusbar-h-padding "40"
+set statusbar-v-padding "40"
+
+set font "Hack 12"
+
+set selection-clipboard clipboard
