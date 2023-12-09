@@ -1,0 +1,113 @@
+#unbind-key all
+#unbind-mouse all
+
+borderwidth 2
+
+ignore			xclock
+ignore			xconsole
+
+# Menu Bindings
+# C Control Key
+# M Meta (ALT) Key
+# S Shift Key
+# 4 Mod4 (Windows) Key
+
+# System controls
+bind-key 4-Return 	xterm
+bind-key 4-w		firefox
+bind-key 4-q 		quit
+bind-key 4-r 		restart
+bind-key 4-l 		lock
+
+# Launchers
+bind-key 4-space 	menu-exec
+bind-key 4-g		menu-group
+bind-key 4-z		menu-window
+
+gap 25 25 25 25
+
+fontname "Hack:size=10:antialias=true"
+color font 		'#FFFFFF'
+color selfont 		'#FFFFFF'
+color menubg 		'#333333'
+color menufg 		'#666666'
+color activeborder	'#CCCCCC'
+color inactiveborder	'#CCCCCC'
+color groupborder	'#CCCCCC'
+color ungroupborder	'#CCCCCC'
+color urgencyborder	'#CCCCCC'
+
+# Window controls
+bind-key 4-Tab 		window-cycle
+bind-key 4S-Tab 	window-rcycle
+bind-key 4-f 		window-fullscreen
+bind-key 4-m		window-maximize
+bind-key 4-x 		window-close
+bind-key 4-h 		window-hide
+bind-key 4S-Up		window-vmaximize
+bind-key 4S-Down	window-hmaximize
+bind-key 4S-Left	window-snap-left
+bind-key 4S-Right	window-snap-right
+
+# Tiling
+htile			50
+vtile			50
+bind-key 4S-s		window-htile
+bind-key 4-s		window-vtile
+
+# Mouse bindings
+bind-mouse 4-1  	window-move
+bind-mouse 4-2 		window-hide
+bind-mouse 4-3		window-resize
+
+# Menu Commaands
+
+command 		" Term " xterm
+command 		" WWW " firefox "--setDefaultBrowser"
+command			" Ports " firefox "https://openports.pl"
+
+# GROUP KEY BINDINGS
+bind-key 4-Up		group-cycle
+bind-key 4-Down		group-rcycle
+bind-key 4-1		group-toggle-1
+bind-key 4-2		group-toggle-2
+bind-key 4-3		group-toggle-3
+bind-key 4-4		group-toggle-4
+bind-key 4-5		group-toggle-5
+bind-key 4-6		group-toggle-6
+bind-key 4-7		group-toggle-7
+bind-key 4-8		group-toggle-8
+bind-key 4-9		group-toggle-9
+bind-key 4-0		group-toggle-all
+bind-key 4S-1		window-movetogroup-1
+bind-key 4S-2		window-movetogroup-2
+bind-key 4S-3		window-movetogroup-3
+bind-key 4S-4		window-movetogroup-4
+bind-key 4S-5		window-movetogroup-5
+bind-key 4S-6		window-movetogroup-6
+bind-key 4S-7		window-movetogroup-7
+bind-key 4S-8		window-movetogroup-8
+bind-key 4S-9		window-movetogroup-9
+bind-key 4C-1		group-only-1
+bind-key 4C-2		group-only-2
+bind-key 4C-3		group-only-3
+bind-key 4C-4		group-only-4
+bind-key 4C-5		group-only-5
+bind-key 4C-6		group-only-6
+bind-key 4C-7		group-only-7
+bind-key 4C-8		group-only-8
+bind-key 4C-9		group-only-9
+bind-key CS-1		group-close-1
+bind-key CS-2		group-close-2
+bind-key CS-3		group-close-3
+bind-key CS-4		group-close-4
+bind-key CS-5		group-close-5
+bind-key CS-6		group-close-6
+bind-key CS-7		group-close-7
+bind-key CS-8		group-close-8
+bind-key CS-9		group-close-9
+
+# Autogroup
+autogroup 1		"Alacritty", "Alacritty"
+autogroup 1		"xterm", "XTerm" 
+autogroup 2		"Navigator", "firefox"
