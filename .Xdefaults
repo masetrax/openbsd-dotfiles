@@ -33,6 +33,8 @@ xterm*scrollTtyOutput: true
 xterm.vt100.internalBorder: 20
 xterm*metaSendsEscape: true
 xterm*eightBitinput: false
+
+! xclock settings
 XClock*.update:			1
 XClock*.analog:			False
 XClock*.render:			True
@@ -42,7 +44,12 @@ XClock*.strftime:		%a %b %d  %H:%M:%S
 XClock*.foreground:		#EEEEEE
 XClock*.background:		#1E1E1E
 
+
+! xconsole settings
 XConsole*foreground:		#EEEEEE
 XConsole*background:		#1E1E1E
 XConsole*borderwidth:		0
 
+! cursor theme
+Xcursor.theme:			Paper
+Xcursor.size:			10
