@@ -1,0 +1,18 @@
+sw_volume: 100
+audio_device_state:1:sndio output
+state: stop
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Blur/1999 - 13/03 Coffee & TV.mp3
+1:Hau/2015 - The No End Theory/08 Hau - Kill.I.Am.mp3
+2:Sole/2003 - Bottle Of Humans/11 - Year Of The $exxx $ymbol.mp3
+3:The Kite String Tangle/2014 - Vessel/01 Arcadia.mp3
+4:Sade/The Ultimate Collection/1-08 Love is stronger than pride.m4a
+5:Sade/The Ultimate Collection/2-03 By your side.m4a
+playlist_end
