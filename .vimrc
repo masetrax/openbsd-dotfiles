@@ -23,5 +23,4 @@ set directory=~/.vim/swp//
 au FileType crontab setlocal bkc=yes
 
 set t_Co=256
-syntax on
 colorscheme masetrax
