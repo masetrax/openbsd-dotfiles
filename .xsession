@@ -10,6 +10,6 @@ hsetroot -solid "#a3ccbd"
 exec mpd &
 exec transmission-daemon &
 exec xclock -geometry +1592+27 &
-sh ~/bar &
+sh ~/.bar &
 exec /usr/X11R6/bin/cwm
 
