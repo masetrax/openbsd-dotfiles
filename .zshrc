@@ -58,4 +58,4 @@ export TERM=xterm
 #		 	#tmux new-window -a -t Thinkpad -n 'Music'
 #                 	#tmux new-window -a -t Thinkpad -n 'Stats'
 #		 	tmux selectw -t 0
-alias dotfiles='/usr/local/bin/git --git-dir=/home/masetrax/.openbsd-dotfiles/ --work-tree=/home/masetrax'
+alias dots='/usr/local/bin/git --git-dir=/home/masetrax/.openbsd-dotfiles/ --work-tree=/home/masetrax'
