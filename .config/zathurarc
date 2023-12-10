@@ -2,22 +2,41 @@ set incremental-search true
 
 #set recolor "true"
 
-set default-bg "#1E1E1E"
-set default-fg "#FFFFFF"
+# Solarized-light
+set default-bg "#EAE5CE"
+set default-fg "#444444"
 
-set completion-bg "#1E1E1E"
-set completion-fg "#FFFFFF"
-set completion-highlight-bg "#6587bf"
-set completion-highlight-fg "#1E1E1E"
+set completion-bg "#EAE5CE"
+set completion-fg "#444444"
+set completion-highlight-bg "#EAE5CE"
+set completion-highlight-fg "#444444"
 
-set statusbar-bg "#1E1E1E"
-set statusbar-fg "#FFFFFF"
+set statusbar-bg "#EAE5CE"
+set statusbar-fg "#444444"
 
-set inputbar-bg "#FFFFFF"
-set inputbar-fg "#1E1E1E"
+set inputbar-bg "#EAE5CE"
+set inputbar-fg "#444444"
 
-set recolor-darkcolor "#1E1E1E"
-set recolor-lightcolor "#FFFFFF"
+set recolor-darkcolor "#EAE5CE"
+set recolor-lightcolor "#444444"
+
+# Monochrome
+#set default-bg "#1E1E1E"
+#set default-fg "#FFFFFF"
+
+#set completion-bg "#1E1E1E"
+#set completion-fg "#FFFFFF"
+#set completion-highlight-bg "#6587bf"
+#set completion-highlight-fg "#1E1E1E"
+
+#set statusbar-bg "#1E1E1E"
+#set statusbar-fg "#FFFFFF"
+
+#set inputbar-bg "#FFFFFF"
+#set inputbar-fg "#1E1E1E"
+
+#set recolor-darkcolor "#1E1E1E"
+#set recolor-lightcolor "#FFFFFF"
 
 set window-height "800"
 set window-width "600"
