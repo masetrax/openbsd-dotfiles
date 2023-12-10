@@ -9,7 +9,7 @@ export GPG_TTY=$(tty)
 export TERM=xterm
       autoload -U compinit; compinit
       autoload edit-command-line
-
+      setopt autocd
       setopt NO_BEEP
       setopt append_history
       setopt share_history
