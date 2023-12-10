@@ -1,18 +1,12 @@
 export XDG_CONFIG_HOME=~/.config
 export XDG_CONFIG_DIRS=~/.config:$XDG_CONFIG_DIRS
-export BUNDLE_USER_HOME=~/.config/bundle
-export BUNDLE_USER_CACHE=~/.local/bundle/cache
-export BUNDLE_USER_PLUGIN=~/.local/bundle/plugin
 export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
 export EDITOR=vim
 export KEYTIMEOUT=1
 export GPG_TTY=$(tty)
-export GO111MODULE=on
-export GOPATH=~/Projects
 export TERM=xterm
-
       autoload -U compinit; compinit
       autoload edit-command-line
 
@@ -32,12 +26,12 @@ export TERM=xterm
       bindkey -e
       bindkey '^r' history-incremental-search-backward
 
-      alias uuidgen='ruby -rsecurerandom -e "print SecureRandom.uuid"'
       alias tmux='tmux -f ~/.config/tmux/tmux.conf new -s Thinkpad'
-
+      alias dots='/usr/local/bin/git --git-dir=/home/masetrax/.openbsd-dotfiles/ --work-tree=/home/masetrax'
+      
       zle -N edit-command-line
       prompt="~ > "
-
+      
       if [ -f ~/.local/zsh/zshrc ]; then
 	        source ~/.local/zsh/zshrc
       fi
@@ -58,4 +52,6 @@ export TERM=xterm
 #		 	#tmux new-window -a -t Thinkpad -n 'Music'
 #                 	#tmux new-window -a -t Thinkpad -n 'Stats'
 #		 	tmux selectw -t 0
-alias dots='/usr/local/bin/git --git-dir=/home/masetrax/.openbsd-dotfiles/ --work-tree=/home/masetrax'
+
+
+
