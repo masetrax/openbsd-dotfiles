@@ -8,7 +8,7 @@ if exists("syntax_on")
 	syntax reset
 	endif
 
-	let colors_name = "jcs"
+	let colors_name = "masetrax"
 
 	hi Comment		cterm=NONE		ctermfg=242
 	hi Constant		cterm=underline		ctermfg=NONE
