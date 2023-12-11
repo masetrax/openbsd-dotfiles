@@ -59,6 +59,10 @@ bind-key 4S-Up		window-vmaximize
 bind-key 4S-Down	window-hmaximize
 bind-key 4S-Left	window-snap-left
 bind-key 4S-Right	window-snap-right
+bind-key 4C-Left	window-snap-up-left
+bind-key 4C-Right	window-snap-up-right
+bind-key 4M-Left	window-snap-down-left
+bind-key 4M-Right	window-snap-down-right
 
 # Tiling
 htile			50
@@ -74,7 +78,11 @@ bind-mouse 4-3		window-resize
 # Menu Commaands
 
 command 		" Term " xterm
+command			" Files " "xterm -e ranger"
 command 		" WWW " firefox "--setDefaultBrowser"
+command			" Music" "xterm -e ncmpcpp"
+command			" IRC " "xterm -e irssi"
+command			" HTOP" "xterm -geometry 80x8 -e htop"
 command			" Ports " firefox "https://openports.pl"
 
 # GROUP KEY BINDINGS

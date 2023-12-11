@@ -6,6 +6,7 @@ export SAVEHIST=10000
 export EDITOR=vim
 export KEYTIMEOUT=1
 export GPG_TTY=$(tty)
+export RANGER_LOAD_DEFAULT_RC=FALSE
 export TERM=xterm
       autoload -U compinit; compinit
       autoload edit-command-line
