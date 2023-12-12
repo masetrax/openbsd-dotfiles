@@ -15,6 +15,8 @@ ignore			xconsole
 # System controls
 bind-key 4-Return 	xterm
 bind-key 4-w		firefox
+bind-key 4S-w		qutebrowser
+bind-key 4-t		"xterm -geometry 80x8 -e htop"
 bind-key 4-q 		quit
 bind-key 4-r 		restart
 bind-key 4-l 		lock
@@ -37,7 +39,7 @@ fontname "Hack:size=10:antialias=true"
 #color ungroupborder	'#CCCCCC'
 #color urgencyborder	'#CCCCCC'
 
-# JCS PALETTE
+# Solarized Light
 color font		'#444444'
 color selfont		'#444444'
 color menubg		'#EAE5CE'	
