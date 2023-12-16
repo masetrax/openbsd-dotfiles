@@ -26,7 +26,7 @@ bind-key 4-space 	menu-exec
 bind-key 4-g		menu-group
 bind-key 4-z		menu-window
 
-gap 25 25 25 25
+gap 50 25 25 25
 
 fontname "Hack:size=10:antialias=true"
 #color font 		'#FFFFFF'

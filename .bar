@@ -1,32 +1,41 @@
 #!/bin/sh
 
 FG='#444444'
-BG='#EAE5CE'
-FONT='Hack:size=10'
-WIDTH='300'
-HEIGHT='67'
+BG='#a3ccbd'
+FONT='Hack:size=6'
+WIDTH='1920'
+HEIGHT='25'
 
-Volume(){
-	v=$(sndioctl -n output.level | awk '{print int ($0*100) '})
-		echo "Vol $v%"
+Clock(){
+	clk=$(date "+%H:%M:%S")
+		echo $clk
 		}
 
-		BattStat(){
-			battery=`apm -l`
-				battcharge=`apm -a`
-					if [ $battcharge -eq 1 ]; then
-							echo "AC ${battery}%"
-								elif [ $battery -eq 100 ]; then
-										echo "Battery ${battery}%"
-											elif [ $battery -le 25 ]; then
-													echo "Battery ${battery}%"
-														else
-																echo "Battery ${battery}%"
-																	fi
-																	}
+		Date(){
+dte=$(date "+%a %b %d")
+				echo $dte
+				}
 
+				Volume(){
+					v=$(sndioctl -n output.level | awk '{print int ($0*100) '})
+						echo "Volume $v%"
+						}
 
-																	while true; do
-																		sleep 1
-																			echo "$(Volume)  $(BattStat)" 
-																			done | dzen2 -p -fn $FONT -bg $BG -fg $FG -ta c -w $WIDTH -h $HEIGHT -y 112 -x 1592 -e 'button2=;'
+						BattStat(){
+							battery=`apm -l`
+								battcharge=`apm -a`
+									if [ $battcharge -eq 1 ]; then
+											echo "Charge ${battery}%"
+												elif [ $battery -eq 100 ]; then
+														echo "Charge ${battery}%"
+															elif [ $battery -le 25 ]; then
+																	echo "Charge ${battery}%"
+																		else
+																				echo "Charge ${battery}%"
+																				fi
+}
+
+while true; do
+	sleep 1
+	echo "$(Volume)  $(BattStat)  $(Date)  $(Clock)       " 
+done | dzen2 -p -fn $FONT -bg $BG -ta r  -fg $FG -w $WIDTH -h $HEIGHT -y 3 -x 0 -e 'button2=;'
