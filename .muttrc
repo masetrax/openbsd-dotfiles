@@ -1,0 +1,40 @@
+set delete = "yes"
+set editor = "vim"
+set mail_check = 60
+set move = no
+set sort = 'threads'
+set sort_aux = 'last-date-received'
+set imap_check_subscribed
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+# Account Information
+set imap_user = "xxxx@fastmail.com"
+set imap_pass = "xxxx"
+
+set from = "xxxx@fastmail.com"
+set realname = "Ryan Mason"
+
+set smtp_url = "smtp://xxxx@fastmail.com@smtp.fastmail.com:587/"
+set smtp_pass = "xxxx"
+
+set folder = "imaps://imap.fastmail.com:993"
+set spoolfile = "imaps://imap.fastmail.com/Inbox"
+set record = "imaps://imap.fastmail.com/Sent"
+set postponed= "imaps://imap.fastmail.com/Drafts"
+
+# Mutt Folders
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+# Authentication
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To CC
+
+# SIDEBAR CONFIGURATION
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats
