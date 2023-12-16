@@ -2,8 +2,8 @@ set delete = "yes"
 set editor = "vim"
 set mail_check = 60
 set move = no
-set sort = 'threads'
-set sort_aux = 'last-date-received'
+set sort = 'reverse-date-received'
+#set sort_aux = 'reverse-last-date-received'
 set imap_check_subscribed
 set ssl_starttls=yes
 set ssl_force_tls=yes
