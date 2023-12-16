@@ -13,8 +13,8 @@ ignore			xconsole
 # 4 Mod4 (Windows) Key
 
 # System controls
-bind-key 4-Return 	xterm
-bind-key 4-w		firefox
+bind-key 4-Return 	"xterm -geometry 80x21"
+bind-key 4-w		firefox "http://www.google.com"
 bind-key 4S-w		qutebrowser
 bind-key 4-t		"xterm -geometry 80x8 -e htop"
 bind-key 4-q 		quit
@@ -26,7 +26,7 @@ bind-key 4-space 	menu-exec
 bind-key 4-g		menu-group
 bind-key 4-z		menu-window
 
-gap 50 25 25 25
+gap 25 25 25 25
 
 fontname "Hack:size=10:antialias=true"
 #color font 		'#FFFFFF'
