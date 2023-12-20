@@ -5,9 +5,14 @@ http://newsrss.bbc.co.uk/rss/newsonline_world_edition/front_page/rss.xml "~BBC N
 # SPORTS
 http://www.espn.com/espn/rss/nba/news "~ESPN NBA News"
 https://www.teamtalk.com/feed "~TEAMtalk Football News"
+https://www.reddit.com/r/Championship/.rss "~Championship Reddit"
 
 # NERD RSS
 https://www.reddit.com/r/OpenBSD/.rss "~OpenBSD Reddit"
 https://www.romanzolotarev.com/n/rss.xml "~Roman Zolotarev Blog"
 https://jcs.org/rss "~JCS Blog"
 https://undeadly.org/cgi?action=rss "~OpenBSD Journal"
+https://www.reddit.com/r/opensource/.rss "~Open Source Reddit"
+
+# REDDIT
+https://www.reddit.com/r/AusFinance/.rss "~AusFinance Reddit"
