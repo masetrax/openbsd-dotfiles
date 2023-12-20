@@ -23,7 +23,7 @@ text-width 80
 
 goto-next-feed no
 
-browser "surf %u"
+browser "firefox"
 
 bind-key j down feedlist
 bind-key k up feedlist
