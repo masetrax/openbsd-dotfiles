@@ -1,0 +1,45 @@
+# LAYOUT
+set barinpadding 1
+set bgcolor #444444
+set border 1
+set fgcolor #eae5ce
+set ignoreresizehints 1
+set font "hack:size=8"
+set gap 10
+set onlyborder 1
+set padding 20 20 20 20
+
+# SCREENS (win+n)
+definekey top s-1 vselect 1
+definekey top s-2 vselect 2
+definekey top s-3 vselect 3
+definekey top s-4 vselect 4
+definekey top s-5 vselect 5
+definekey top s-6 vselect 6
+definekey top s-7 vselect 7
+definekey top s-8 vselect 8
+definekey top s-9 vselect 9
+definekey top s-0 vselect 0
+
+# NAVIGATION
+bind Tab focuslast
+bind grave focus
+
+# LAUNCHERS
+bind b exec firefox
+bind C-b exec firefox
+
+
+exec sh ~/.config/sdorfehs/sdorfehs-bar.sh
+
+# AUTORUN
+hsplit
+fselect 1
+split 1490
+fselect 0
+
+execf 0 env RUN_AND_RETURN=neomutt xterm -title mutt
+execf 1 env RUN_AND_RETURN=irc xterm -title irssi
+fselect 2
+execf 2 env RUN_AND_RETURN=ncmpcpp xterm -title nmpcpp
+exec sleep 2; sdorfehs -c "fselect 1" -c "fselect 0"
